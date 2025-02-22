@@ -1,0 +1,138 @@
+body{
+    font-family: 'poppins',sans-serif;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    backdrop-filter: blur;
+    background: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+
+}
+.logo{
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+.logo:hover{
+    color:orangered;
+    text-shadow:0 0 25px orangered
+                0 0 20px orangered;
+    transform: scale(1.1);
+}
+span{
+    color: orangered
+}
+.navbar a{
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: orangered;
+    border-bottom: 3px solid orangered;
+}
+.contact{
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    color:Black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3 ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+.contact:hover{
+    transition-delay: 0.5s;
+    background-color: orangered;
+    box-shadow: 0 0 20px orangered;
+    color: white;
+    transform: scale(1.1);
+}
+.home{
+    width: 100%;
+    min-height: auto;
+    background: white;
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 10px 20px 0;
+    margin-top: 90px;
+
+}
+.home-content{
+    max-width: 800px;
+}
+.home-content h1{
+    font-size: 62px;
+    line-height: 1.2;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.home-content p{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 25px 0 30px;
+    gap: 2em
+}
+.btn-1{
+    align-items: center;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3 ease;
+    cursor: pointer;
+    
+}
+.btn-1:hover{
+    background-color: orangered;
+    color: white;
+    transform: scale(1.1);
+    transition-delay: 0.3s;
+}    
+.img-box img{
+    border-radius: 50%;
+    width: 450px;
+    justify-content: center;
+}
+.contacts h1{
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 250px;
+    margin-bottom: 1em;
+}
+.contacts .input-box input,
+.contacts textarea{
+    width: 50%;
+    color: black;
+    background-color: white;
+    font-size: 18px;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+    border-color: orangered;
+    align-content: center;
+
+}            
