@@ -45,27 +45,7 @@ span{
     color: orangered;
     border-bottom: 3px solid orangered;
 }
-.contact{
-    align-items: center;
-    padding: 10px 20px;
-    background-color: white;
-    color:Black;
-    border: 2px solid transparent;
-    border-radius: 8px;
-    font-size: 16px;
-    letter-spacing: 1px;
-    font-weight: 600;
-    transition: 0.3 ease;
-    cursor: pointer;
-    text-decoration: none;
-}
-.contact:hover{
-    transition-delay: 0.5s;
-    background-color: orangered;
-    box-shadow: 0 0 20px orangered;
-    color: white;
-    transform: scale(1.1);
-}
+
 .home{
     width: 100%;
     min-height: auto;
@@ -91,6 +71,91 @@ span{
     margin: 25px 0 30px;
     gap: 2em
 }
+.about h1{
+    margin-top: 250px;
+    text-align:center;
+    font-size: 70px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    line-height: 1.1;
+} 
+.about-content{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin:0 auto;
+    gap:2rem;
+    padding: 1rem; 
+}
+.checkbtn{
+    font-size: 20px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.cards {
+    position: relative;
+    border-top: 100px;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    gap: 2em;
+    
+    
+}
+
+.text{
+    font-size: 25px;
+    font-weight: 500;
+    padding: 15px;
+    align-content: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.text:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+.text p{
+    padding-top: 0;
+    margin-top: 0px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    color: black
+}
+.text h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    border-top: 70px;
+    text-align: center;
+    padding-top: 50px;
+    margin-top: 30px;
+
+}
+.img{
+     position: absolute;
+     width: 250px;
+     height: 250px;
+     right: 30%;
+     left: 20%;
+     top: 5px;
+}     
+.img1{    
+     border: 45px;
+     border-radius: 50%; 
+}
+
 .btn-1{
     align-items: center;
     padding: 10px 20px;
@@ -120,7 +185,7 @@ span{
     font-size: 40px;
     font-weight: 400;
     text-align: center;
-    margin-top: 250px;
+    margin-top: 150px;
     margin-bottom: 1em;
 }
 .contacts .input-box input,
@@ -135,4 +200,55 @@ span{
     border-color: orangered;
     align-content: center;
 
-}            
+}   
+@media screen and (max-width: 768px) {
+    .logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    .checkbtn{
+        display: block;
+
+    }
+    a{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        left: 0;
+        text-align: center;
+    }
+    .navbar a{
+        display: block;
+    }
+    #check:checked ~ ul{
+        left: 0;
+        
+    }
+    .home{
+        flex-direction: column;
+        
+    }
+    .header{
+        display: none;
+    }
+    .about-content{
+        display: flex;
+        flex-direction: column;
+        margin-left: -10%; 
+    }
+    .contacts .input-box input,
+    .contacts textarea{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        color: black;
+        background-color: white;
+        font-size: 18px;
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 10px;
+        border-color: orangered;
+        align-content: center;
+    }
+}         
